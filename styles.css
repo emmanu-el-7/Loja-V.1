@@ -48,10 +48,14 @@ nav {
     color: #C7BAB3;
 }
 
-.github {
-    color: floralwhite;
-    font-weight: 600;
-    font: bold;
+.github > img {
+    border-radius: 20rem;
+    width: 2.5rem;
+}
+
+.cadastro > img {
+    border-radius: 20rem;
+    width: 2.5rem;
 }
 
 .principal {
