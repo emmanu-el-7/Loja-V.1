@@ -122,10 +122,9 @@ hr {
 }
 
 .hero-images-container {
-    max-width: 100%;
-    column-count: 3;
-    column-gap: 1rem;
-    margin: -1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
 }
 
 .hero-images-container > figure > img {
@@ -139,6 +138,7 @@ hr {
     max-width: 1120px;
     padding: 3rem 2rem;
     margin: auto;
+    align-items: center;
 }
 
 .produtos-cabecalho {
@@ -173,7 +173,7 @@ hr {
 .produtos-card {
     background: #241A1C;
     padding: 2rem;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -268,12 +268,7 @@ footer {
         background: #1f1517;
         width: 100%;
     }
-    .menu li {
-        border-bottom: 1px solid #363636;
-    }
-    .menu-toggle:checked + .menu-icon + .menu {
-        display: block;
-    }
+    
     .menu-mobile {
         display: flex;
     }
