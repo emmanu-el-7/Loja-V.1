@@ -9,6 +9,8 @@
 body {
     background: #1f1517;
     color: floralwhite;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
 }
 
 html {
@@ -18,10 +20,6 @@ html {
 
 a {
     text-decoration: none;
-}
-
-ul {
-    list-style: none;
 }
 
 nav {
@@ -42,10 +40,26 @@ nav {
 }
 
 .menu {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    color: #C7BAB3;
+    list-style: none;
+    border: 1px solid #363636;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: aliceblue;
+    display: none;
+    z-index: 1;
+}
+
+.menu li:hover ul, .menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    border: 1px solid #c0c0c0;
+    width: 150px;
 }
 
 .github > img {
@@ -247,7 +261,18 @@ footer {
         font-size: 14px;
     }
     .menu {
-        display: none; /* Oculta o menu principal */
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #1f1517;
+        width: 100%;
+    }
+    .menu li {
+        border-bottom: 1px solid #363636;
+    }
+    .menu-toggle:checked + .menu-icon + .menu {
+        display: block;
     }
     .menu-mobile {
         display: flex;
