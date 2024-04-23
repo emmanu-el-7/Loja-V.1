@@ -292,6 +292,7 @@ footer {
     font-weight: 500;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 768px) {
     .icon-container {
         position: absolute;
@@ -314,6 +315,13 @@ footer {
         font-size: 3.3vh;
     }
 
+=======
+@media only screen and (max-width: 600px) {
+    .logo {
+        font-size: 3.5vh
+    }
+    
+>>>>>>> e2f734730418c80fece6958ab6fcca1914f200de
     body {
         font-size: 14px;
     }
@@ -392,4 +400,27 @@ footer {
     .footer {
         padding: 2rem;
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+.btn{
+    background-color: #A45A49;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: background-color 0.75s ease;
+}
+
+.btn:hover{
+    background-color: #1f1517;
+}
+>>>>>>> e2f734730418c80fece6958ab6fcca1914f200de
