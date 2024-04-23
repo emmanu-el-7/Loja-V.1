@@ -349,6 +349,7 @@ footer {
 
     .hero-images-container {
         column-count: 1;
+        width: 80%;
     }
 
     .produtos-card-container {
