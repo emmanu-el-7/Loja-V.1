@@ -151,15 +151,60 @@ hr {
     font-weight: 400;
 }
 
-.hero-images-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 1rem;
+.carousel {
+    width: 100%;
+    height: 400px;
+    position: relative;
 }
 
-.hero-images-container > figure > img {
+.carousel > input {
+    display: none;
+}
+
+.slides {
     width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 2rem;
+}
+
+.navigation {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation label {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#slide1:checked ~ .slides .slide:nth-child(1),
+#slide2:checked ~ .slides .slide:nth-child(2),
+#slide3:checked ~ .slides .slide:nth-child(3),
+#slide4:checked ~ .slides .slide:nth-child(4),
+#slide5:checked ~ .slides .slide:nth-child(5) {
+    display: block;
 }
 
 .produtos {
@@ -347,9 +392,24 @@ footer {
         padding: 2rem 1rem;
     }
 
-    .hero-images-container {
-        column-count: 1;
-        width: 80%;
+    .slides {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    }
+
+    .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    }
+
+    .slide img {
+    width: 40vh;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 2rem;
     }
 
     .produtos-card-container {
@@ -363,7 +423,7 @@ footer {
     }
 
     .produtos-card {
-        max-width: 65%;
+        max-width: 100%;
         flex-basis: 100%;
         margin-bottom: 2rem;
     }
