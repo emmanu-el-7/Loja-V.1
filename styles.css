@@ -199,7 +199,7 @@ hr {
     margin: 5px;
     cursor: pointer;
     margin-top: 10vh;
-    transition: background-color 0.75s ease;
+    transition: background-color 0.25s ease;
 }
 
 .navigation label:hover {
